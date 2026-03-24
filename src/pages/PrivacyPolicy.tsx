@@ -25,7 +25,7 @@ const PrivacyPolicy = () => (
         <p>Adotamos medidas de segurança adequadas para proteger os dados pessoais contra acesso não autorizado, alteração ou destruição.</p>
 
         <h2 className="text-xl font-display font-semibold text-foreground">5. Contato</h2>
-        <p>Para dúvidas sobre esta política, entre em contato pelo e-mail: contato@construturaportoreis.com.br</p>
+        <p>Para dúvidas sobre esta política, entre em contato pelo e-mail: contato@helderporto.com.br</p>
 
         <p className="text-sm">Última atualização: Março de 2026</p>
       </div>

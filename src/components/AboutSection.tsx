@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const stats = [
   { icon: Building2, label: "Projetos Entregues", value: "150+" },
   { icon: Users, label: "Clientes Satisfeitos", value: "120+" },
-  { icon: Clock, label: "Anos de Experiência", value: "15+" },
+  { icon: Clock, label: "Anos de Experiência", value: "2+" },
   { icon: Shield, label: "Garantia de Qualidade", value: "100%" },
 ];
 
@@ -19,7 +19,7 @@ const AboutSection = () => (
         </h2>
         <p className="text-muted-foreground text-lg leading-relaxed">
           A <strong className="text-foreground">Construtura Porto e Reis</strong> atua no mercado da construção civil
-          há mais de 15 anos, oferecendo serviços de engenharia, reforma e construção residencial,
+          há mais de 2 anos, oferecendo serviços de engenharia, reforma e construção residencial,
           comercial e industrial. Nossa missão é transformar projetos em realidade com transparência,
           qualidade e respeito aos prazos, construindo relações de confiança duradouras com nossos clientes.
         </p>

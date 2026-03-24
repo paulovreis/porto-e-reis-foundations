@@ -75,16 +75,16 @@ const ContactSection = () => {
                   Construtura Porto e Reis
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Somos especialistas em construção civil com mais de 15 anos de experiência.
+                  Somos especialistas em construção civil com mais de 2 anos de experiência.
                   Entre em contato para um orçamento personalizado.
                 </p>
               </div>
 
               <div className="space-y-4">
                 {[
-                  { icon: MapPin, label: "Endereço", value: "[Endereço comercial completo conforme registro legal]" },
-                  { icon: Phone, label: "Telefone", value: "(XX) XXXX-XXXX" },
-                  { icon: Mail, label: "E-mail", value: "contato@construturaportoreis.com.br" },
+                  { icon: MapPin, label: "Endereço", value: "Rua Vincente de Paula, 148, Paraíso, Guanambi-BA, 46.430-000" },
+                  { icon: Phone, label: "Telefone", value: "(77) 98129-9005" },
+                  { icon: Mail, label: "E-mail", value: "contato@helderporto.com.br" },
                 ].map((item, i) => (
                   <motion.div
                     key={item.label}

@@ -19,9 +19,9 @@ const Footer = () => (
           <div>
             <h4 className="font-display text-lg font-semibold mb-4">Contato</h4>
             <address className="not-italic text-primary-foreground/70 text-sm space-y-2">
-              <p>[Endereço comercial completo conforme registro legal]</p>
-              <p>Telefone: (XX) XXXX-XXXX</p>
-              <p>E-mail: contato@construturaportoreis.com.br</p>
+              <p>Rua Vincente de Paula, 148, Paraíso, Guanambi-BA, 46.430-000</p>
+              <p>Telefone: (77) 98129-9005</p>
+              <p>E-mail: contato@helderporto.com.br</p>
             </address>
           </div>
 

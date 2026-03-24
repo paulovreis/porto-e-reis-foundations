@@ -46,7 +46,7 @@ const HeroSection = () => (
             <a href="#contato">Solicitar Orçamento</a>
           </Button>
           <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 text-base px-8 transition-transform duration-200 hover:scale-105" asChild>
-            <a href="#servicos">Nossos Serviços</a>
+            <a href="#servicos" className="text-black">Nossos Serviços</a>
           </Button>
         </motion.div>
       </div>
