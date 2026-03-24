@@ -1,4 +1,6 @@
 import { Home, Building, Hammer, HardHat, Ruler, Paintbrush } from "lucide-react";
+import { ScrollReveal, StaggerContainer, StaggerItem } from "@/components/ScrollReveal";
+import { motion } from "framer-motion";
 
 const services = [
   { icon: Home, title: "Construção Residencial", desc: "Casas e edifícios residenciais com acabamento de alto padrão e projetos personalizados." },
@@ -12,27 +14,33 @@ const services = [
 const ServicesSection = () => (
   <section id="servicos" className="py-20 md:py-28">
     <div className="section-container">
-      <div className="text-center mb-16">
+      <ScrollReveal className="text-center mb-16">
         <p className="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Serviços</p>
         <h2 className="text-3xl md:text-4xl font-bold text-foreground">
           Soluções completas em construção civil
         </h2>
-      </div>
+      </ScrollReveal>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-6" staggerDelay={0.1}>
         {services.map((s) => (
-          <div
-            key={s.title}
-            className="group p-8 rounded-xl border bg-card hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-          >
-            <div className="w-12 h-12 rounded-lg bg-accent/15 flex items-center justify-center mb-5 group-hover:bg-accent/25 transition-colors">
-              <s.icon className="text-accent" size={24} />
-            </div>
-            <h3 className="text-xl font-display font-semibold text-foreground mb-3">{s.title}</h3>
-            <p className="text-muted-foreground leading-relaxed">{s.desc}</p>
-          </div>
+          <StaggerItem key={s.title}>
+            <motion.div
+              className="group p-8 rounded-xl border bg-card h-full"
+              whileHover={{ y: -6, boxShadow: "0 20px 40px -15px hsl(var(--foreground) / 0.1)" }}
+              transition={{ duration: 0.25 }}
+            >
+              <motion.div
+                className="w-12 h-12 rounded-lg bg-accent/15 flex items-center justify-center mb-5"
+                whileHover={{ scale: 1.1, backgroundColor: "hsl(var(--accent) / 0.25)" }}
+              >
+                <s.icon className="text-accent" size={24} />
+              </motion.div>
+              <h3 className="text-xl font-display font-semibold text-foreground mb-3">{s.title}</h3>
+              <p className="text-muted-foreground leading-relaxed">{s.desc}</p>
+            </motion.div>
+          </StaggerItem>
         ))}
-      </div>
+      </StaggerContainer>
     </div>
   </section>
 );
